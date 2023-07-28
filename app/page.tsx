@@ -1,12 +1,15 @@
 import Image from 'next/image'
-
+import Navbar from './_components/navbar.tsx'
 
 export default function Home() {
   return (
-   <main>
-   
-    <span>Hello World! Ensiene is under development in all power.</span>
+
+   <main className="bg-slate-950">
+    
+    <Navbar /> 
+    
     
    </main>
+
   )
 }
