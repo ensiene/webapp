@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import Navbar from 'app/_components/navbar.tsx'
+import Navbar from './_components/navbar'
 
 export default function Home() {
   return (
