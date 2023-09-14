@@ -1,5 +1,5 @@
 /* eslint-disable react/no-children-prop */
-import { IconoirProvider, Check } from 'iconoir-react'
+import { IconoirProvider } from 'iconoir-react'
 
 export function IconoirProviderConfig () {
     return (

@@ -1,10 +1,11 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import React from 'react';
 
-import './globals.css';
 import { ThemeProvider } from '@/components/ui/theme-provider'
 import { Header } from './_components/header'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,10 +22,9 @@ export default function RootLayout({
 }) {
   return (
     
-    <html lang="en" className="min-h-screen">
+    <html lang="en" className="min-h-screen overflow-x-0">
 
       <body className={inter.className}>
-
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <Header />
 
@@ -32,6 +32,7 @@ export default function RootLayout({
 
         </ThemeProvider>
 
+        
       </body>
 
     </html>

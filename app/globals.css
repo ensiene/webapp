@@ -1,7 +1,28 @@
 @tailwind base;
 @tailwind components;
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/assets/fonts/Outfit-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/assets/fonts/Outfit-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* All @font-faces after @tailwind utilities */
+
 @tailwind utilities;
  
+
+
 @layer base {
   :root {
     --background: 0 0% 100%;
