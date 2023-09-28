@@ -6,7 +6,7 @@ const ProfilePage = async () => {
   const session = await getServerSession(options);
 
   return (
-    <div>
+    <div className="dark:bg-black bg-slate-50">
       <h1>ProfilePage</h1>
 
       <div>

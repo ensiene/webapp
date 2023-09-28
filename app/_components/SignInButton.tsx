@@ -5,7 +5,7 @@ import { signIn } from "next-auth/react";
 const SignInButton = () => {
   return (
     <button
-      className="bg-slate-600 px-4 py-2 text-white"
+      className="bg-slate-600 px-4 py-2 text-white rounded-md"
       onClick={() => signIn("github", { callbackUrl: "/profile" })}
       type="button"
     >

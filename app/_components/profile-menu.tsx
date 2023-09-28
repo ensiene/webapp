@@ -39,7 +39,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 
-import { Iconoir, ProfileCircle, Menu } from 'iconoir-react';
+import { Iconoir, ProfileCircle, Menu } from 'iconoir-react'
+import Link from "next/link"
 
 export function MenuProfile() {
   return (
@@ -50,43 +51,48 @@ export function MenuProfile() {
       <DropdownMenuContent align="end" className="w-56 mt-3.5">
         <DropdownMenuLabel>My Account</DropdownMenuLabel>
         <DropdownMenuSeparator />
-    
+        <Link href="/profile">
           <DropdownMenuItem>
             <User className="mr-2 h-4 w-4" />
             <span>Profile</span>
 
           </DropdownMenuItem>
-          <DropdownMenuItem>
-            <CreditCard className="mr-2 h-4 w-4" />
-            <span>Billing</span>
+        </Link>
 
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <Settings className="mr-2 h-4 w-4" />
-            <span>Settings</span>
+        <DropdownMenuItem>
+          <CreditCard className="mr-2 h-4 w-4" />
+          <span>Billing</span>
 
-          </DropdownMenuItem>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          <Settings className="mr-2 h-4 w-4" />
+          <span>Settings</span>
 
-          <DropdownMenuSeparator />
+        </DropdownMenuItem>
 
-          <DropdownMenuItem>
-            <Cookie className="mr-2 h-4 w-4" />
-            <span>Privacy</span>
-          </DropdownMenuItem>
-          <DropdownMenuItem>
-            <LifeBuoy className="mr-2 h-4 w-4" />
-            <span>Support</span>
-          </DropdownMenuItem>
-          <DropdownMenuItem disabled>
-            <FlaskConical className="mr-2 h-4 w-4" />
-            <span>Beta</span>
-          </DropdownMenuItem>
-          <DropdownMenuSeparator />
+        <DropdownMenuSeparator />
+
+        <DropdownMenuItem>
+          <Cookie className="mr-2 h-4 w-4" />
+          <span>Privacy</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          <LifeBuoy className="mr-2 h-4 w-4" />
+          <span>Support</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem disabled>
+          <FlaskConical className="mr-2 h-4 w-4" />
+          <span>Beta</span>
+        </DropdownMenuItem>
+        <DropdownMenuSeparator />
+
+        <Link href="/sign-out">
           <DropdownMenuItem>
             <LogOut className="mr-2 h-4 w-4" />
             <span>Log out</span>
 
           </DropdownMenuItem>
+        </Link>
       </DropdownMenuContent>
     </DropdownMenu>
   )
@@ -99,7 +105,7 @@ export function MenuSandwich() {
         <Button variant="outline" className="w-10 px-0"><Menu></Menu></Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="start" className="w-56 mt-3.5">
- 
+
         <DropdownMenuItem>
           <Home className="mr-2 h-4 w-4" />
           <span>Home</span>
