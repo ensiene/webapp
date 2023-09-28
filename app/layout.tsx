@@ -14,7 +14,6 @@ export const metadata: Metadata = {
   description: 'Hello World! Closed beta only, see you soon!',
 }
 
-
 export default function RootLayout({
   children,
 }: {
