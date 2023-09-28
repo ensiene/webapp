@@ -79,9 +79,6 @@ export function Navbar() {
 
 
 
-
-
-
       <div className="md:flex flex-shrink-0 items-center hidden">
         <NavigationMenu className="flex w-full border-solid-1 dark:border-slate-100">
           <NavigationMenuList className="flex  w-full items-center justify-between justify-items-center  px-6 py-3 ">
@@ -139,6 +136,70 @@ export function Navbar() {
                       {component.description}
                     </ListItem>
                   ))}
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Labs</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                  <li className="row-span-3">
+                    <NavigationMenuLink asChild>
+                      <a
+                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                        href="/"
+                      >
+                        <Iconoir className="h-6 w-6" />
+                        <div className="mb-2 mt-4 text-lg font-medium">
+                          Ensiene
+                        </div>
+                        <p className="text-sm leading-tight text-muted-foreground">
+                          Bringing free education to all the world, globally.
+                        </p>
+                      </a>
+                    </NavigationMenuLink>
+                  </li>
+                  <ListItem href="/docs" title="Introduction">
+                    Re-usable components built using Radix UI and Tailwind CSS.
+                  </ListItem>
+                  <ListItem href="/docs/installation" title="Installation">
+                    How to install dependencies and structure your app.
+                  </ListItem>
+                  <ListItem href="/docs/primitives/typography" title="Typography">
+                    Styles for headings, paragraphs, lists...etc
+                  </ListItem>
+                </ul>
+              </NavigationMenuContent>
+            </NavigationMenuItem>
+            <NavigationMenuItem>
+              <NavigationMenuTrigger>Articles</NavigationMenuTrigger>
+              <NavigationMenuContent>
+                <ul className="grid gap-3 p-6 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+                  <li className="row-span-3">
+                    <NavigationMenuLink asChild>
+                      <a
+                        className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                        href="/"
+                      >
+                        <Iconoir className="h-6 w-6" />
+                        <div className="mb-2 mt-4 text-lg font-medium">
+                          Ensiene
+                        </div>
+                        <p className="text-sm leading-tight text-muted-foreground">
+                          Bringing free education to all the world, globally.
+                        </p>
+                      </a>
+                    </NavigationMenuLink>
+                  </li>
+                  <ListItem href="/docs" title="Introduction">
+                    Re-usable components built using Radix UI and Tailwind CSS.
+                  </ListItem>
+                  <ListItem href="/docs/installation" title="Installation">
+                    How to install dependencies and structure your app.
+                  </ListItem>
+                  <ListItem href="/docs/primitives/typography" title="Typography">
+                    Styles for headings, paragraphs, lists...etc
+                  </ListItem>
                 </ul>
               </NavigationMenuContent>
             </NavigationMenuItem>

@@ -22,7 +22,7 @@ export default function RootLayout({
 }) {
   return (
     
-    <html lang="en" className="min-h-screen overflow-x-0">
+    <html lang="en-US" className="min-h-screen overflow-x-0">
 
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

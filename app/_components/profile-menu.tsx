@@ -3,14 +3,22 @@ import {
   CreditCard,
   Github,
   Keyboard,
+  Cookie,
   LifeBuoy,
   LogOut,
   Mail,
   MessageSquare,
+  FlaskConical,
   Plus,
   PlusCircle,
   Settings,
   User,
+  Home,
+  Newspaper,
+  LayoutGrid,
+  ShoppingBag,
+  Award,
+  Beaker,
   UserPlus,
   Users,
 } from "lucide-react"
@@ -39,85 +47,46 @@ export function MenuProfile() {
       <DropdownMenuTrigger asChild>
         <Button variant="outline" className="w-10 px-0"><ProfileCircle></ProfileCircle></Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end"  className="w-56 mt-2">
-        <DropdownMenuLabel>Home</DropdownMenuLabel>
+      <DropdownMenuContent align="end" className="w-56 mt-3.5">
+        <DropdownMenuLabel>My Account</DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuGroup>
+    
           <DropdownMenuItem>
             <User className="mr-2 h-4 w-4" />
             <span>Profile</span>
-            <DropdownMenuShortcut>⇧⌘P</DropdownMenuShortcut>
+
           </DropdownMenuItem>
           <DropdownMenuItem>
             <CreditCard className="mr-2 h-4 w-4" />
             <span>Billing</span>
-            <DropdownMenuShortcut>⌘B</DropdownMenuShortcut>
+
           </DropdownMenuItem>
           <DropdownMenuItem>
             <Settings className="mr-2 h-4 w-4" />
             <span>Settings</span>
-            <DropdownMenuShortcut>⌘S</DropdownMenuShortcut>
+
+          </DropdownMenuItem>
+
+          <DropdownMenuSeparator />
+
+          <DropdownMenuItem>
+            <Cookie className="mr-2 h-4 w-4" />
+            <span>Privacy</span>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            <Keyboard className="mr-2 h-4 w-4" />
-            <span>Keyboard shortcuts</span>
-            <DropdownMenuShortcut>⌘K</DropdownMenuShortcut>
+            <LifeBuoy className="mr-2 h-4 w-4" />
+            <span>Support</span>
           </DropdownMenuItem>
-        </DropdownMenuGroup>
-        <DropdownMenuSeparator />
-        <DropdownMenuGroup>
+          <DropdownMenuItem disabled>
+            <FlaskConical className="mr-2 h-4 w-4" />
+            <span>Beta</span>
+          </DropdownMenuItem>
+          <DropdownMenuSeparator />
           <DropdownMenuItem>
-            <Users className="mr-2 h-4 w-4" />
-            <span>Team</span>
+            <LogOut className="mr-2 h-4 w-4" />
+            <span>Log out</span>
+
           </DropdownMenuItem>
-          <DropdownMenuSub>
-            <DropdownMenuSubTrigger>
-              <UserPlus className="mr-2 h-4 w-4" />
-              <span>Invite users</span>
-            </DropdownMenuSubTrigger>
-            <DropdownMenuPortal>
-              <DropdownMenuSubContent>
-                <DropdownMenuItem>
-                  <Mail className="mr-2 h-4 w-4" />
-                  <span>Email</span>
-                </DropdownMenuItem>
-                <DropdownMenuItem>
-                  <MessageSquare className="mr-2 h-4 w-4" />
-                  <span>Message</span>
-                </DropdownMenuItem>
-                <DropdownMenuSeparator />
-                <DropdownMenuItem>
-                  <PlusCircle className="mr-2 h-4 w-4" />
-                  <span>More...</span>
-                </DropdownMenuItem>
-              </DropdownMenuSubContent>
-            </DropdownMenuPortal>
-          </DropdownMenuSub>
-          <DropdownMenuItem>
-            <Plus className="mr-2 h-4 w-4" />
-            <span>New Team</span>
-            <DropdownMenuShortcut>⌘+T</DropdownMenuShortcut>
-          </DropdownMenuItem>
-        </DropdownMenuGroup>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem>
-          <Github className="mr-2 h-4 w-4" />
-          <span>GitHub</span>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <LifeBuoy className="mr-2 h-4 w-4" />
-          <span>Support</span>
-        </DropdownMenuItem>
-        <DropdownMenuItem disabled>
-          <Cloud className="mr-2 h-4 w-4" />
-          <span>API</span>
-        </DropdownMenuItem>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem>
-          <LogOut className="mr-2 h-4 w-4" />
-          <span>Log out</span>
-          <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
-        </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
   )
@@ -129,26 +98,31 @@ export function MenuSandwich() {
       <DropdownMenuTrigger asChild>
         <Button variant="outline" className="w-10 px-0"><Menu></Menu></Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="start" className="w-56">
-        <DropdownMenuLabel>My Account</DropdownMenuLabel>
-        <DropdownMenuSeparator />
+      <DropdownMenuContent align="start" className="w-56 mt-3.5">
+ 
         <DropdownMenuItem>
-          <Github className="mr-2 h-4 w-4" />
-          <span>GitHub</span>
+          <Home className="mr-2 h-4 w-4" />
+          <span>Home</span>
         </DropdownMenuItem>
         <DropdownMenuItem>
-          <LifeBuoy className="mr-2 h-4 w-4" />
-          <span>Support</span>
+          <ShoppingBag className="mr-2 h-4 w-4" />
+          <span>Store</span>
         </DropdownMenuItem>
-        <DropdownMenuItem disabled>
-          <Cloud className="mr-2 h-4 w-4" />
-          <span>API</span>
-        </DropdownMenuItem>
-        <DropdownMenuSeparator />
         <DropdownMenuItem>
-          <LogOut className="mr-2 h-4 w-4" />
-          <span>Log out</span>
-          <DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
+          <LayoutGrid className="mr-2 h-4 w-4" />
+          <span>Library</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          <Beaker className="mr-2 h-4 w-4" />
+          <span>Labs</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          <Newspaper className="mr-2 h-4 w-4" />
+          <span>Articles</span>
+        </DropdownMenuItem>
+        <DropdownMenuItem>
+          <Award className="mr-2 h-4 w-4" />
+          <span>Plans</span>
         </DropdownMenuItem>
       </DropdownMenuContent>
     </DropdownMenu>
