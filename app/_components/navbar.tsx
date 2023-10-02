@@ -24,7 +24,7 @@ import LoginOptions from "./LoginOptions";
 
 export function Navbar() {
   return (
-    <div className=" dark:bg-slate-950 flex flex-row align-middle items-center w-full justify-between lg:px-32 md:px-8 px-4 py-3 md:py-0">
+    <div className="flex flex-row align-middle items-center w-full justify-between lg:px-32 md:px-8 px-4 py-3 md:py-0 shadow-sm">
       <div className="flex flex-shrink-0 gap-x-2 items-center">
         <div className="flex md:hidden" >
           <MenuSandwich />
@@ -36,7 +36,7 @@ export function Navbar() {
               src="/assets/images/icon.webp"
               alt="Ensiene"
             />
-            <h1 className="sm:flex font-bold text-3xl font-outfit hidden">ensiene</h1>
+            <h1 className="sm:flex font-black text-3xl font-outfit hidden">ensiene</h1>
           </div>
         </Link>
       </div>

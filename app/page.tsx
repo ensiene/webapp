@@ -6,7 +6,7 @@ import LoginOptions from "@/app/_components/LoginOptions"
 export default function Home() {
   return (
 
-    <main className="dark:bg-black bg-slate-50 h-screen">
+    <main className=" h-screen">
 
       <div className='flex align-middle justify-center h-full items-center'>
         <span className='text-xl font-semibold'> Hello world! </span>

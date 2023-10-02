@@ -10,7 +10,7 @@ import { Header } from './_components/header'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Home - Ensiene',
+  title: 'Ensiene',
   description: 'Hello World! Closed beta only, see you soon!',
 }
 
@@ -21,7 +21,7 @@ export default function RootLayout({
 }) {
   return (
     
-    <html lang="en-US" className="min-h-screen overflow-x-0">
+    <html lang="en-US" className="min-h-screen overflow-x-0 bg-slate-50 dark:bg-black">
 
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>

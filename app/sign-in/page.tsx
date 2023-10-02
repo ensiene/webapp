@@ -11,9 +11,15 @@ const SignInPage = async () => {
     redirect("/profile");
   } else {
     return (
-      <div className="dark:bg-black bg-slate-50 flex align-middle justify-center h-screen items-center">
-        <h1>SignInPage</h1>
-        
+      
+      <div className="dark:bg-black bg-slate-50 flex flex-col flex-wrap align-middle justify-center h-fit items-center">
+
+
+        <h1 className="text-lg">
+          
+          SignInPage</h1>
+
+   
         <SignInButton />
       </div>
     );
