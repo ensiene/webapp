@@ -4,10 +4,12 @@ import * as React from "react"
 import Link from "next/link"
 
 import { cn } from "@/lib/utils"
-import { Iconoir, ProfileCircle } from 'iconoir-react';
+import { Iconoir, ProfileCircle } from 'iconoir-react'
 import { ModeToggle } from './darkmode'
 
 import { MenuProfile, MenuSandwich } from './profile-menu'
+
+
 
 import {
   NavigationMenu,
@@ -19,12 +21,14 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-import { Navitems }  from '@/app/_components/Navitems'
+import { Navitems } from '@/app/_components/Navitems'
 import LoginOptions from "./LoginOptions";
+
 
 export function Navbar() {
   return (
     <div className="flex flex-row align-middle items-center w-full justify-between lg:px-32 md:px-8 px-4 py-3 md:py-0 shadow-sm">
+      
       <div className="flex flex-shrink-0 gap-x-2 items-center">
         <div className="flex md:hidden" >
           <MenuSandwich />
@@ -52,10 +56,11 @@ export function Navbar() {
         <LoginOptions />
         
       </div>
-
-
+  
 
     </div>
+
+    
 
   )
 }

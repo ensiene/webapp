@@ -10,12 +10,6 @@ export default function Home() {
 
       <div className='flex align-middle justify-center h-full items-center'>
         <span className='text-xl font-semibold'> Hello world! </span>
-
-
-        
-        
-
-
       </div>
 
     </main>
