@@ -14,31 +14,20 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
 
-    <main className=" h-screen">
+    <main className="h-full">
       <Header />
 
 
       <div className='flex align-middle justify-center items-center flex-col'>
-        <div
-          className='-z-10'
-          style={{
-            // use the src property of the image object
-            backgroundImage: 'url(${"/assets/images/hero.webp"})',
-            // other styles
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            width: "100vw",
-            height: "100vh",
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center'
-          }}
-        >
+        <div className="bg-cover bg-center bg-no-repeat w-screen h-screen flex items-center justify-left" style={{ backgroundImage: 'url(/assets/images/hero.webp)' }}>
+          <div className='flex flex-col'>
+            <span className='lg:text-5xl text-3xl font-bold my-4 text-left max-w-2xl lg:ml-32 ml-4'> If you want to learn or share what you know, you've come to the right place. </span>
+            <span className='lg:text-xl text-md font-normal my-4 text-left max-w-sm lg:ml-32 ml-4'> Discover a world of technology: study, learn, and apply like never before. </span>
+
+          </div>
 
         </div>
 
-        <span className='text-xl font-semibold mt-20'> Hello world! </span>
 
       </div>
 
