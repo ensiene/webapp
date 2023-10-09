@@ -4,7 +4,7 @@ import { Inter } from 'next/font/google'
 import React from 'react';
 
 import { ThemeProvider } from '@/components/ui/theme-provider'
-import { Header } from './_components/header'
+
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -25,7 +25,7 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            <Header />
+            
 
             {children}
 

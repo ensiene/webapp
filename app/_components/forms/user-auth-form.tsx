@@ -1,5 +1,5 @@
 "use client"  
-
+import { signIn } from "next-auth/react";
 /* v0.1.2.8 */
 
 import * as React from "react"
@@ -60,7 +60,7 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
           </span>
         </div>
       </div>
-      <Button variant="outline" type="button" disabled={isLoading}>
+      <Button variant="outline" type="button" disabled={isLoading} onClick={() => signIn("github", { callbackUrl: "/profile" })}>
         {isLoading ? (
           <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
         ) : (
