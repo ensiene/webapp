@@ -1,5 +1,5 @@
 import { Container } from 'lucide-react'
-import { Navbar } from ""./_components/navbar'
+import { Navbar } from  './_components/navbar'
 import Link from "next/link"
 import LoginOptions from "@/app/_components/LoginOptions"
 import { Header } from "./_components/header"
