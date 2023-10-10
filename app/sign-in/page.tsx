@@ -45,7 +45,7 @@ const SignInPage = async () => {
             )}
           >
 
-            Sing up
+            Sign up
           </Link>
 
           <div className="relative hidden h-full flex-col bg-muted p-10 text-white dark:border-r lg:flex">
