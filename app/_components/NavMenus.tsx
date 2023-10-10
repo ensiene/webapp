@@ -109,7 +109,7 @@ export function MenuSandwich() {
           <DropdownMenuItem>
 
             <Home className="mr-2 h-6 w-6" />
-            <span className="text-xl">Home</span>
+            <span className="text-lg">Home</span>
 
           </DropdownMenuItem>
         </Link>
@@ -118,7 +118,7 @@ export function MenuSandwich() {
           <DropdownMenuItem>
 
             <ShoppingBag className="mr-2 h-6 w-6" />
-            <span>Store</span>
+            <span className="text-lg">Store</span>
 
           </DropdownMenuItem>
         </Link>
@@ -126,7 +126,7 @@ export function MenuSandwich() {
           <DropdownMenuItem>
 
             <LayoutGrid className="mr-2 h-6 w-6" />
-            <span>Library</span>
+            <span className="text-lg">Library</span>
 
           </DropdownMenuItem>
         </Link>
@@ -135,7 +135,7 @@ export function MenuSandwich() {
           <DropdownMenuItem>
 
             <Beaker className="mr-2 h-6 w-6" />
-            <span>Labs</span>
+            <span className="text-lg">Labs</span>
 
           </DropdownMenuItem>
         </Link>
@@ -144,7 +144,7 @@ export function MenuSandwich() {
           <DropdownMenuItem>
 
             <Newspaper className="mr-2 h-6 w-6" />
-            <span>Articles</span>
+            <span className="text-lg">Articles</span>
 
           </DropdownMenuItem>
         </Link>
@@ -153,7 +153,7 @@ export function MenuSandwich() {
           <DropdownMenuItem>
 
             <Award className="mr-2 h-6 w-6" />
-            <span>Plans</span>
+            <span className="text-lg">Plans</span>
 
           </DropdownMenuItem>
         </Link>
