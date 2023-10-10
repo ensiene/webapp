@@ -5,10 +5,10 @@ import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 import { Iconoir, ProfileCircle } from 'iconoir-react'
-import { ModeToggle } from './darkmode'
+import { ModeToggle } from './Darkmode'
 
-import { MenuProfile, MenuSandwich } from './profile-menu'
-
+import { MenuProfile, MenuSandwich } from './NavMenus'
+import Logomark from "@/app/_components/miscellaneous/EnsieneLogo"
 
 
 import {
@@ -21,7 +21,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-import { Navitems } from '@/app/_components/Navitems'
+import { Navitems } from '@/app/_components/NavItems'
 import LoginOptions from "./LoginOptions";
 
 
@@ -33,16 +33,7 @@ export function Navbar() {
         <div className="flex md:hidden" >
           <MenuSandwich />
         </div>
-        <Link href="/">
-          <div className="sm:flex flex-shrink-0 items<MenuSandwich />-center">
-            <img
-              className="h-8 w-auto px-2"
-              src="/assets/images/icon.webp"
-              alt="Ensiene"
-            />
-            <h1 className="sm:flex font-black text-3xl font-outfit hidden">ensiene</h1>
-          </div>
-        </Link>
+        <Logomark />
       </div>
 
 

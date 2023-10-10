@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { getServerSession } from "next-auth/next";
 import { options } from "@/app/api/auth/[...nextauth]/options";
-import { MenuProfile, MenuSandwich } from './profile-menu'
+import { MenuProfile, MenuSandwich } from './NavMenus'
 import { Button } from "@/components/ui/button"
 
 const LoginOptions = async () => {

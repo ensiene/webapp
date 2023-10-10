@@ -1,16 +1,26 @@
 import Image from "next/image";
 import { getServerSession } from "next-auth";
 import { options } from "@/app/api/auth/[...nextauth]/options";
+import { Header } from "@/app/_components/Header"
+
+import { Metadata } from "next"
+export const metadata: Metadata = {
+  title: "Ensiene | User profile",
+  description: "Edit your profile here",
+}
+
 
 const ProfilePage = async () => {
   const session = await getServerSession(options);
 
   return (
-    <div className="dark:bg-black bg-slate-50">
-      <h1>ProfilePage</h1>
+    <main className="h-full">
 
-      <div>
-        {session?.user?.name ? <h2>Hello {session.user.name}!</h2> : null}
+      <Header />
+      <h1>Profile page</h1>
+
+      <div className="flex flex-col align-middle justify-center items-center">
+        
 
         {session?.user?.image ? (
           <Image
@@ -19,10 +29,15 @@ const ProfilePage = async () => {
             height={200}
             alt={`Profile Pic for ${session.user.name}`}
             priority={true}
+            className="rounded-full"
           />
         ) : null}
+        
+        {session?.user?.name ? <h2 className="text-2xl font-bold my-2">Hello, {session.user.name}!</h2> : null}
+
+        
       </div>
-    </div>
+    </main>
   );
 };
 

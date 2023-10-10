@@ -1,8 +1,8 @@
 import { Container } from 'lucide-react'
-import { Navbar } from  './_components/navbar'
+import { Navbar } from  './_components/Navbar'
 import Link from "next/link"
 import LoginOptions from "@/app/_components/LoginOptions"
-import { Header } from "./_components/header"
+import { Header } from "./_components/Header"
 import Image from "next/image"
 
 import { Metadata } from "next"

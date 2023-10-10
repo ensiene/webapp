@@ -105,32 +105,59 @@ export function MenuSandwich() {
         <Button variant="outline" className="w-10 px-0"><Menu></Menu></Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="start" className="w-56 mt-3.5">
+        <Link href='/'>
+          <DropdownMenuItem>
 
-        <DropdownMenuItem>
-          <Home className="mr-2 h-4 w-4" />
-          <span>Home</span>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <ShoppingBag className="mr-2 h-4 w-4" />
-          <span>Store</span>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <LayoutGrid className="mr-2 h-4 w-4" />
-          <span>Library</span>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <Beaker className="mr-2 h-4 w-4" />
-          <span>Labs</span>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <Newspaper className="mr-2 h-4 w-4" />
-          <span>Articles</span>
-        </DropdownMenuItem>
-        <DropdownMenuItem>
-          <Award className="mr-2 h-4 w-4" />
-          <span>Plans</span>
-        </DropdownMenuItem>
+            <Home className="mr-2 h-6 w-6" />
+            <span className="text-xl">Home</span>
+
+          </DropdownMenuItem>
+        </Link>
+
+        <Link href='/store'>
+          <DropdownMenuItem>
+
+            <ShoppingBag className="mr-2 h-6 w-6" />
+            <span>Store</span>
+
+          </DropdownMenuItem>
+        </Link>
+        <Link href='/library'>
+          <DropdownMenuItem>
+
+            <LayoutGrid className="mr-2 h-6 w-6" />
+            <span>Library</span>
+
+          </DropdownMenuItem>
+        </Link>
+
+        <Link href='/labs'>
+          <DropdownMenuItem>
+
+            <Beaker className="mr-2 h-6 w-6" />
+            <span>Labs</span>
+
+          </DropdownMenuItem>
+        </Link>
+
+        <Link href='/articles'>
+          <DropdownMenuItem>
+
+            <Newspaper className="mr-2 h-6 w-6" />
+            <span>Articles</span>
+
+          </DropdownMenuItem>
+        </Link>
+        
+        <Link href='/plans'>
+          <DropdownMenuItem>
+
+            <Award className="mr-2 h-6 w-6" />
+            <span>Plans</span>
+
+          </DropdownMenuItem>
+        </Link>
       </DropdownMenuContent>
-    </DropdownMenu>
+    </DropdownMenu >
   )
 }
