@@ -5,7 +5,7 @@ import React from 'react';
 
 import { ThemeProvider } from '@/components/ui/theme-provider'
 
-
+import NextTopLoader from 'nextjs-toploader';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -25,7 +25,7 @@ export default function RootLayout({
 
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            
+          <NextTopLoader />
 
             {children}
 
