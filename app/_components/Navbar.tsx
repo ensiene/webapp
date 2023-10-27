@@ -27,35 +27,33 @@ import LoginOptions from "./LoginOptions";
 
 export function Navbar() {
   return (
-    <div className="flex flex-row align-middle items-center w-full justify-between lg:px-32 md:px-8 px-4 py-3 md:py-0 shadow-sm">
 
-      <div className="flex flex-shrink-0 gap-x-2 items-center">
-        <div className="flex md:hidden" >
-          <MenuSandwich />
+
+      <div className="flex flex-row align-middle items-center w-full justify-between lg:px-32 md:px-8 px-4 py-3 md:py-0 shadow-sm">
+
+        <div className="flex flex-shrink-0 gap-x-2 items-center">
+          <div className="flex md:hidden" >
+            <MenuSandwich />
+          </div>
+          <Logomark />
         </div>
-        <Logomark />
+
+
+        <Navitems />
+
+
+        <div className="flex flex-shrink-0 gap-x-2 items-center">
+          <ModeToggle />
+
+
+          <LoginOptions />
+
+        </div>
+
+
       </div>
-
-
-      <Navitems />
-
-
-      <div className="flex flex-shrink-0 gap-x-2 items-center">
-        <ModeToggle />
-
-
-        <LoginOptions />
-
-      </div>
-
-
-    </div>
-
+   
 
 
   )
 }
-
-
-
-

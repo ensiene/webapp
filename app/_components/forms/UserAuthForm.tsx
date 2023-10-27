@@ -60,7 +60,14 @@ export function UserAuthForm({ className, ...props }: UserAuthFormProps) {
           </span>
         </div>
       </div>
-      <Button variant="outline" type="button" disabled={isLoading} onClick={() => signIn("github", { callbackUrl: "/profile" })}>
+      <Button variant="outline" type="button" disabled={isLoading} onClick={async () => {
+        setIsLoading(true);
+        try {
+          await signIn("github", { callbackUrl: "/profile" });
+        } finally {
+          setIsLoading(false);
+        }
+      }}>
         {isLoading ? (
           <Icons.spinner className="mr-2 h-4 w-4 animate-spin" />
         ) : (

@@ -1,7 +1,7 @@
 
 import { getServerSession } from "next-auth";
 import { redirect } from "next/navigation";
-import { options } from "../api/auth/[...nextauth]/options";
+import { options } from "@/app/api/auth/[...nextauth]/options";
 
 import SignOutButton from "@/app/_components/SignOutButton";
 

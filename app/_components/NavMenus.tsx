@@ -108,8 +108,8 @@ export function MenuSandwich() {
         <Link href='/'>
           <DropdownMenuItem>
 
-            <Home className="mr-2 h-6 w-6" />
-            <span className="text-lg">Home</span>
+            <Home className="mr-2 h-4 w-4" />
+            <span className="text-md">Home</span>
 
           </DropdownMenuItem>
         </Link>
@@ -117,16 +117,16 @@ export function MenuSandwich() {
         <Link href='/store'>
           <DropdownMenuItem>
 
-            <ShoppingBag className="mr-2 h-6 w-6" />
-            <span className="text-lg">Store</span>
+            <ShoppingBag className="mr-2 h-4 w-4" />
+            <span className="text-md">Store</span>
 
           </DropdownMenuItem>
         </Link>
         <Link href='/library'>
           <DropdownMenuItem>
 
-            <LayoutGrid className="mr-2 h-6 w-6" />
-            <span className="text-lg">Library</span>
+            <LayoutGrid className="mr-2 h-4 w-4" />
+            <span className="text-md">Library</span>
 
           </DropdownMenuItem>
         </Link>
@@ -134,8 +134,8 @@ export function MenuSandwich() {
         <Link href='/labs'>
           <DropdownMenuItem>
 
-            <Beaker className="mr-2 h-6 w-6" />
-            <span className="text-lg">Labs</span>
+            <Beaker className="mr-2 h-4 w-4" />
+            <span className="text-md">Labs</span>
 
           </DropdownMenuItem>
         </Link>
@@ -143,8 +143,8 @@ export function MenuSandwich() {
         <Link href='/articles'>
           <DropdownMenuItem>
 
-            <Newspaper className="mr-2 h-6 w-6" />
-            <span className="text-lg">Articles</span>
+            <Newspaper className="mr-2 h-4 w-4" />
+            <span className="text-md">Articles</span>
 
           </DropdownMenuItem>
         </Link>
@@ -152,8 +152,8 @@ export function MenuSandwich() {
         <Link href='/plans'>
           <DropdownMenuItem>
 
-            <Award className="mr-2 h-6 w-6" />
-            <span className="text-lg">Plans</span>
+            <Award className="mr-2 h-4 w-4" />
+            <span className="text-md">Plans</span>
 
           </DropdownMenuItem>
         </Link>
