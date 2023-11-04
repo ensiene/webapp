@@ -3,7 +3,7 @@ import Link from "next/link"
 
 import { getServerSession } from "next-auth"
 import { redirect } from "next/navigation"
-import { options } from "@/app/api/auth/[...nextauth]/options"
+import { authOptions } from "@/app/api/auth/[...nextauth]/route"
 
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 
 export default async function SignInPage() {
-  const session = await getServerSession(options);
+  const session = await getServerSession(authOptions);
 
   if (session) {
     redirect("/profile");

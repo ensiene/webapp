@@ -5,11 +5,11 @@ import { signOut } from "next-auth/react";
 const SignOutButton = () => {
   return (
     <button
-      className="bg-slate-600 px-4 py-2 text-white"
+      className="bg-white px-4 py-2 rounded-md text-slate-900"
       onClick={() => signOut({ callbackUrl: "/" })}
       type="button"
     >
-      Sign Out of GitHub
+      Yes, i'm sure
     </button>
   );
 };

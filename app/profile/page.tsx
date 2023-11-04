@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getServerSession } from "next-auth";
-import { options } from "@/app/api/auth/[...nextauth]/options";
-import { Header } from "@/components/atom/Header"
+import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { Header } from "@/components/Header"
 
 import { Metadata } from "next"
 export const metadata: Metadata = {
@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 }
 
 
-const ProfilePage = async () => {
-  const session = await getServerSession(options);
+export default async function ProfilePage() {
+  const session = await getServerSession(authOptions);
 
   return (
     <main className="h-full">
@@ -41,4 +41,3 @@ const ProfilePage = async () => {
   );
 };
 
-export default ProfilePage;

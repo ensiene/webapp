@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { getServerSession } from "next-auth/next";
-import { options } from "@/app/api/auth/[...nextauth]/options";
+import { options } from "@/app/api/auth/[...nextauth]/route";
 import { MenuProfile, MenuSandwich } from './NavMenus'
 import { Button } from "@/components/ui/button"
 
