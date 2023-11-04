@@ -1,11 +1,10 @@
 import Link from "next/link";
 import { getServerSession } from "next-auth/next";
-import { options } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { MenuProfile, MenuSandwich } from './NavMenus'
 import { Button } from "@/components/ui/button"
-
-const LoginOptions = async () => {
-  const session = await getServerSession(options);
+export default async function LoginOptions() {
+  const session = await getServerSession(authOptions);
 
   return (
 
@@ -31,5 +30,3 @@ const LoginOptions = async () => {
 
   );
 };
-
-export default LoginOptions;
