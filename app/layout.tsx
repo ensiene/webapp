@@ -22,18 +22,19 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    <AuthProvider>
+      <html lang="en-US" className="min-h-screen overflow-x-0 bg-slate-50 dark:bg-black">
 
-    <html lang="en-US" className="min-h-screen overflow-x-0 bg-slate-50 dark:bg-black">
+        <body className={inter.className}>
 
-      <body className={inter.className}>
-        <AuthProvider>
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <NextTopLoader showSpinner={false} />
             {children}
           </ThemeProvider>
-        </AuthProvider>
-      </body>
 
-    </html>
+        </body>
+
+      </html>
+    </AuthProvider>
   )
 }

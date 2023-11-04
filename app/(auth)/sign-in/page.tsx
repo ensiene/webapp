@@ -1,29 +1,31 @@
 import Image from "next/image"
 import Link from "next/link"
 
-import { getServerSession } from "next-auth";
-import { redirect } from "next/navigation";
-import { options } from "@/app/api/auth/[...nextauth]/options";
+import { getServerSession } from "next-auth"
+import { redirect } from "next/navigation"
+import { options } from "@/app/api/auth/[...nextauth]/options"
 
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "@/components/ui/button"
 import { UserAuthForm } from "@/components/forms/UserAuthForm"
 import Logomark from "@/components/miscellaneous/EnsieneLogo"
 
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Ensiene | Authetication",
+  description: "Sign in with your account or create one now!",
+};
 
 
 export default async function SignInPage() {
-  const session = await getServerSession();
+  const session = await getServerSession(options);
 
   if (session) {
     redirect("/profile");
   } else {
-    return (
-
+  return (
       <main className="flex col">
-
-
-
         <div className="container relative  h-[800px] flex-col items-center justify-center grid lg:max-w-none lg:grid-cols-2 lg:px-0">
           <div className="lg:hidden absolute left-4 top-4 md:left-8 md:top-8">
             <Logomark />
@@ -90,10 +92,7 @@ export default async function SignInPage() {
             </div>
           </div>
         </div>
-
-
       </main>
-
     );
   }
 };
