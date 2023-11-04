@@ -20,6 +20,13 @@ import {
 
 import Link from "next/link";
 
+import { Metadata } from "next"
+
+export const metadata: Metadata = {
+  title: "Ensiene | Sign-out",
+  description: "Are you sure you want to leave?",
+};
+
 
 export default async function SignOutPage() {
   const session = await getServerSession(authOptions);
