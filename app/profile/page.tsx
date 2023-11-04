@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { getServerSession } from "next-auth";
 import { options } from "@/app/api/auth/[...nextauth]/options";
-import { Header } from "@/app/_components/Header"
+import { Header } from "@/components/atom/Header"
 
 import { Metadata } from "next"
 export const metadata: Metadata = {

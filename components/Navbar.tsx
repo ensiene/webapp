@@ -5,10 +5,10 @@ import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 import { Iconoir, ProfileCircle } from 'iconoir-react'
-import { ModeToggle } from './Darkmode'
+import { ModeToggle } from './buttons/Darkmode'
 
 import { MenuProfile, MenuSandwich } from './NavMenus'
-import Logomark from "@/app/_components/miscellaneous/EnsieneLogo"
+import Logomark from "@/components/miscellaneous/EnsieneLogo"
 
 
 import {
@@ -21,7 +21,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-import { Navitems } from '@/app/_components/NavItems'
+import { Navitems } from '@/components/NavItems'
 import LoginOptions from "./LoginOptions";
 
 

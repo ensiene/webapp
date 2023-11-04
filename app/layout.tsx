@@ -1,11 +1,11 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import React from 'react';
+import React from 'react'
 
 import { ThemeProvider } from '@/components/ui/theme-provider'
-
-import NextTopLoader from 'nextjs-toploader';
+import AuthProvider from '@/app/AuthProvider'
+import NextTopLoader from 'nextjs-toploader'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,24 +14,24 @@ export const metadata: Metadata = {
   description: 'Hello World! Closed beta only, see you soon!',
 }
 
+
+
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
   return (
-    
+
     <html lang="en-US" className="min-h-screen overflow-x-0 bg-slate-50 dark:bg-black">
 
       <body className={inter.className}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <NextTopLoader showSpinner={false} />
-
+        <AuthProvider>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            <NextTopLoader showSpinner={false} />
             {children}
-
-        </ThemeProvider>
-
-        
+          </ThemeProvider>
+        </AuthProvider>
       </body>
 
     </html>
