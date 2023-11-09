@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <AuthProvider>
+   /* <AuthProvider>*/
       <html lang="en-US" className="min-h-screen overflow-x-0 bg-slate-50 dark:bg-black">
 
         <body className={inter.className}>
@@ -35,6 +35,6 @@ export default function RootLayout({
         </body>
 
       </html>
-    </AuthProvider>
+   /* </AuthProvider>*/
   )
 }
