@@ -3,9 +3,9 @@ image: gitpod/workspace-bun
 tasks:
   - name: UseNode20
     command: |
-      nvm i 20.9.0
-      nvm use 20.9.0
-      nvm alias default 20.9.0
+      nvm i v20.9.0
+      nvm use v20.9.0
+      nvm alias default v20.9.0
       echo "nvm use default &>/dev/null" >> ~/.bashrc.d/51-nvm-fix
 
   - name: Init a bun project and run
