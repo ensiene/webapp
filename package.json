@@ -6,7 +6,9 @@
 	},
 	"private": true,
 	"scripts": {
-		"postinstall": "prisma generate",
+		"predev": "prisma generate",
+		"prebuild": "prisma generate",
+		"prestart": "prisma generate",
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
