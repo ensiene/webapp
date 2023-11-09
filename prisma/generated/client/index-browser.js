@@ -16,12 +16,12 @@ exports.Prisma = Prisma
 exports.$Enums = {}
 
 /**
- * Prisma Client JS version: 5.3.1
- * Query Engine version: 61e140623197a131c2a6189271ffee05a7aa9a59
+ * Prisma Client JS version: 5.5.2
+ * Query Engine version: aebc046ce8b88ebbcb45efe31cbe7d06fd6abc0a
  */
 Prisma.prismaVersion = {
-  client: "5.3.1",
-  engine: "61e140623197a131c2a6189271ffee05a7aa9a59"
+  client: "5.5.2",
+  engine: "aebc046ce8b88ebbcb45efe31cbe7d06fd6abc0a"
 }
 
 Prisma.PrismaClientKnownRequestError = () => {
@@ -116,11 +116,11 @@ exports.Prisma.AccountScalarFieldEnum = {
   refresh_token: 'refresh_token',
   access_token: 'access_token',
   expires_at: 'expires_at',
-  refresh_token_expires_in: 'refresh_token_expires_in',
   token_type: 'token_type',
   scope: 'scope',
   id_token: 'id_token',
-  session_state: 'session_state'
+  session_state: 'session_state',
+  refresh_token_expires_in: 'refresh_token_expires_in'
 };
 
 exports.Prisma.SessionScalarFieldEnum = {
@@ -133,11 +133,11 @@ exports.Prisma.SessionScalarFieldEnum = {
 exports.Prisma.UserScalarFieldEnum = {
   id: 'id',
   name: 'name',
-  bio: 'bio',
-  age: 'age',
   email: 'email',
-  emailVerified: 'emailVerified',
   image: 'image',
+  emailVerified: 'emailVerified',
+  age: 'age',
+  bio: 'bio',
   isAdmin: 'isAdmin'
 };
 
