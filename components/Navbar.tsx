@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils"
 import { Iconoir, ProfileCircle } from 'iconoir-react'
 import { ModeToggle } from './buttons/Darkmode'
 
-import { MenuProfile, MenuSandwich } from './NavMenus'
+import { MenuSandwich } from './NavMenus'
 import Logomark from "@/components/miscellaneous/EnsieneLogo"
 
 

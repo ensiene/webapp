@@ -8,7 +8,7 @@ import GitHubProvider from 'next-auth/providers/github';
 export const authOptions: NextAuthOptions = {
 	adapter: PrismaAdapter(prisma!),
 	secret: process.env.SECRET,
-	session: { strategy: "jwt" },
+	session: { strategy: "database" },
 	providers: [
 		GitHubProvider({
 			clientId: process.env.GITHUB_ID!,
@@ -20,6 +20,7 @@ export const authOptions: NextAuthOptions = {
 		signOut: "/sign-out",
 	},
 };
+
 //route
 const handler = NextAuth(authOptions);
 export { handler as GET, handler as POST };

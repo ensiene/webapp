@@ -32,7 +32,7 @@ export default async function SignOutPage() {
   const session = await getServerSession(authOptions);
 
   if (!session) {
-    redirect("/");
+    redirect("/sign-in");
   } else {
     return (
       <div className="flex flex-col align-middle justify-center items-center h-screen">
@@ -43,7 +43,7 @@ export default async function SignOutPage() {
           </CardHeader>
           <CardFooter className="flex justify-between">
             <Button variant="outline" >
-              <Link href="/"> Cancel </Link>
+              <Link href="/dashboard"> Cancel </Link>
               </Button>
             <SignOutButton />
           </CardFooter>

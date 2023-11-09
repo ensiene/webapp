@@ -22,11 +22,11 @@ export default async function SignInPage() {
   const session = await getServerSession(authOptions);
 
   if (session) {
-    redirect("/profile");
+    redirect("/dashboard");
   } else {
   return (
       <main className="flex col">
-        <div className="container relative  h-[800px] flex-col items-center justify-center grid lg:max-w-none lg:grid-cols-2 lg:px-0">
+        <div className="container relative  h-screen flex-col items-center justify-center grid lg:max-w-none lg:grid-cols-2 lg:px-0">
           <div className="lg:hidden absolute left-4 top-4 md:left-8 md:top-8">
             <Logomark />
 
@@ -50,9 +50,9 @@ export default async function SignInPage() {
             <div className="relative z-20 mt-auto">
               <blockquote className="space-y-2">
                 <p className="text-lg">
-                  &ldquo; Create your account and improve your skils at Ensiene.&rdquo;
+                  &ldquo;Create your account and improve your skils at Ensiene&rdquo;
                 </p>
-                <footer className="text-sm">Sofia Davis</footer>
+                <footer className="text-sm">Diego Kelme</footer>
               </blockquote>
             </div>
           </div>

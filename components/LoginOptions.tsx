@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { MenuProfile, MenuSandwich } from './NavMenus'
 import { Button } from "@/components/ui/button"
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+
 export default async function LoginOptions() {
   const session = await getServerSession(authOptions);
 

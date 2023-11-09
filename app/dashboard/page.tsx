@@ -3,13 +3,13 @@ import { getServerSession } from "next-auth";
 import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 import { Header } from "@/components/Header"
 import { redirect } from "next/navigation"
-import * as React from "react"
 
 import { Metadata } from "next"
 export const metadata: Metadata = {
-  title: "Ensiene | User profile",
-  description: "Edit your profile here",
+  title: "Ensiene | Dashboard",
+  description: "See your stats, courses and informations here",
 }
+
 
 export default async function ProfilePage() {
   const session = await getServerSession(authOptions);
@@ -17,11 +17,10 @@ export default async function ProfilePage() {
     redirect("/sign-in");
   } else {
     return (
-
       <main className="h-full">
 
         <Header />
-        <h1>Profile page</h1>
+        <h1>Dashboard</h1>
 
         <div className="flex flex-col align-middle justify-center items-center">
 

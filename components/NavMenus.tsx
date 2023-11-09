@@ -42,11 +42,27 @@ import {
 import { Iconoir, ProfileCircle, Menu } from 'iconoir-react'
 import Link from "next/link"
 
-export function MenuProfile() {
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import Image from "next/image";
+
+export async function MenuProfile() {
+  const session = await getServerSession(authOptions);
+  
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className="w-10 px-0"><ProfileCircle></ProfileCircle></Button>
+        <Button variant="outline" className="w-10 px-0"> 
+        {session?.user?.image ? (
+          <Image
+            src={session.user.image}
+            width={40}
+            height={40}
+            alt={`Profile Pic for ${session.user.name}`}
+            priority={true}
+            className="rounded-sm"
+          />
+        ) : <ProfileCircle />}  </Button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-56 mt-3.5">
         <DropdownMenuLabel>My Account</DropdownMenuLabel>
