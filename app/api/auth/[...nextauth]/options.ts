@@ -1,12 +1,11 @@
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
-import prisma from "@/lib/db";
-import NextAuth from 'next-auth';
-import type { NextAuthOptions } from 'next-auth';
-import GitHubProvider from 'next-auth/providers/github';
+import prisma from "@/lib/prisma";
+import type { NextAuthOptions } from "next-auth";
+import GitHubProvider from "next-auth/providers/github";
 
 //options
 export const authOptions: NextAuthOptions = {
-	adapter: PrismaAdapter(prisma!),
+	adapter: PrismaAdapter(prisma),
 	secret: process.env.SECRET,
 	session: { strategy: "database" },
 	providers: [
@@ -20,7 +19,3 @@ export const authOptions: NextAuthOptions = {
 		signOut: "/sign-out",
 	},
 };
-
-//route
-const handler = NextAuth(authOptions);
-export { handler as GET, handler as POST };

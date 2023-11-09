@@ -43,7 +43,7 @@ import { Iconoir, ProfileCircle, Menu } from 'iconoir-react'
 import Link from "next/link"
 
 import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+import { authOptions } from "@/app/api/auth/[...nextauth]/options";
 import Image from "next/image";
 
 export async function MenuProfile() {
