@@ -6,13 +6,11 @@
 	},
 	"private": true,
 	"scripts": {
-		"predev": "prisma generate",
-		"prebuild": "prisma generate",
-		"prestart": "prisma generate",
 		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
-		"lint": "next lint"
+		"lint": "next lint",
+		"postinstall": "prisma generate"
 	},
 	"dependencies": {
 		"@headlessui/react": "^1.7.15",
