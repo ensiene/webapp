@@ -4,6 +4,10 @@ import { authOptions } from "@/app/api/auth/[...nextauth]/options";
 import { Header } from "@/components/Header"
 import { redirect } from "next/navigation"
 import * as React from "react"
+import { getI18n, getScopedI18n } from '@/locales/server'
+
+
+
 
 import { Metadata } from "next"
 export const metadata: Metadata = {
@@ -11,13 +15,20 @@ export const metadata: Metadata = {
   description: "Edit your profile here",
 }
 
+
+
+
 export default async function ProfilePage() {
-  const session = await getServerSession(authOptions);
+  const session = await getServerSession(authOptions); 
+  
+  const t = await getI18n()
+  const scopedT = await getScopedI18n('hello')
   if (!session) {
     redirect("/sign-in");
   } else {
     return (
-
+      
+      
       <main className="h-full">
 
         <Header />
@@ -37,7 +48,7 @@ export default async function ProfilePage() {
             />
           ) : null}
 
-          {session?.user?.name ? <h2 className="text-2xl font-bold my-2">Hello, {session.user.name}!</h2> : null}
+          {session?.user?.name ? <h2 className="text-2xl font-bold my-2">{t('welcome')} {session.user.name}!</h2> : null}
 
 
         </div>

@@ -5,7 +5,8 @@ import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 import { Iconoir, ProfileCircle } from 'iconoir-react'
-import { ModeToggle } from './buttons/Darkmode'
+import { ModeToggle } from '@/components/buttons/Darkmode'
+import { LangSwitch } from '@/components/buttons/LangSwitcher'
 
 import { MenuSandwich } from './NavMenus'
 import Logomark from "@/components/miscellaneous/EnsieneLogo"
@@ -21,7 +22,7 @@ import {
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu"
 
-import { Navitems } from '@/components/NavItems'
+import  { Navitems }  from '@/components/NavItems'
 import LoginOptions from "./LoginOptions";
 
 
@@ -43,6 +44,7 @@ export function Navbar() {
 
 
         <div className="flex flex-shrink-0 gap-x-2 items-center">
+          <LangSwitch /> 
           <ModeToggle />
 
 
