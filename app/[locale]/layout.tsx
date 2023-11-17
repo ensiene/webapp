@@ -7,7 +7,7 @@ import { ThemeProvider } from '@/components/ui/theme-provider'
 import AuthProvider from '@/app/[locale]/AuthProvider'
 import NextTopLoader from 'nextjs-toploader'
 
-import { getI18n, getScopedI18n } from '../../locales/server'
+import { getI18n, getScopedI18n } from '@/locales/server'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,15 +26,14 @@ export async function generateMetadata() {
 
 
 
-
 export default function RootLayout({
-  children,
+  children, params: { locale }
 }: {
-  children: React.ReactNode
+  children: React.ReactNode, params: { locale: string  }
 }) {
   return (
     <AuthProvider>
-      <html lang="en-US" className="min-h-screen overflow-x-0 bg-slate-50 dark:bg-black">
+      <html lang={locale} className="min-h-screen overflow-x-0 bg-slate-50 dark:bg-black">
 
         <body className={inter.className}>
 

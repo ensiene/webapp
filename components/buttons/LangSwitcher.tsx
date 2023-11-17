@@ -32,7 +32,10 @@ export function LangSwitch() {
           English
         </DropdownMenuItem>
         <DropdownMenuItem onClick={() => changeLocale('pt')}>
-          Portuguese 
+          Português 
+        </DropdownMenuItem>
+        <DropdownMenuItem onClick={() => changeLocale('es')}>
+          Español
         </DropdownMenuItem>
 
       </DropdownMenuContent>

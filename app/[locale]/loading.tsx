@@ -1,4 +1,4 @@
-import Skeleton  from '@/components/miscellaneous/Skeleton.tsx'
+import Skeleton from '@/components/miscellaneous/Skeleton'
  
 export default function Loading() {
   // You can add any UI inside Loading, including a Skeleton.

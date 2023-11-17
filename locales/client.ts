@@ -7,4 +7,5 @@ export const { useI18n, useScopedI18n, I18nProviderClient, useChangeLocale,
   
 	en: () => import("./en"),
 	pt: () => import("./pt"),
+	es: () => import("./es"),
 })
