@@ -17,14 +17,16 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'roboto': ['Roboto', 'sans-serif'],
-        'outfit': ['Outfit']
-      },
+				roboto: ["Roboto", "sans-serif"],
+				goldplay: ["Goldplay"],
+				generalsans: ["GeneralSans"],
+			},
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
+        "background-secondary": "hsl(var(--background-secondary))",
         foreground: "hsl(var(--foreground))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
@@ -69,8 +71,7 @@ module.exports = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: 0 },
         },
-      }, 
-
+      },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",

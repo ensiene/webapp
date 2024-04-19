@@ -1,0 +1,27 @@
+image: gitpod/workspace-bun
+
+tasks:
+  - name: UseNode20
+    command: |
+      nvm i v20.9.0
+      nvm use v20.9.0
+      nvm alias default v20.9.0
+      echo "nvm use default &>/dev/null" >> ~/.bashrc.d/51-nvm-fix
+
+  - name: Init a bun project and run
+    init: |
+      npm install -g bun 
+      # Init a project if needed
+      if test ! -e package.json; then {
+        bun init -y
+      } fi
+      # Install dependencies
+      bun install
+      
+    command: |
+      # Run project
+      bun run dev
+
+ports:
+  - port: 3000
+    onOpen: open-preview
